@@ -1,4 +1,4 @@
-# City Sustainability Indexes Prediction
+# AI for Cities: An Innovative AI Tool for Measuring City Sustainability using Satellite Data
 
 This repository contains codes and data for performing city classification prediction tasks.
 
