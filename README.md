@@ -1,9 +1,4 @@
-# City similarity
-
-![image](https://github.com/IS2AI/city-similarity/assets/5821328/7e4086ea-3af9-4458-a723-23816f2fc0af)
-
-
-
+# City Sustainability Indexes Prediction
 
 This repository contains codes and data for performing city classification prediction tasks.
 
@@ -28,24 +23,14 @@ python3 preprocessing.py
 
 # Training
 
-To launch training for city classification use the following script:
-```
-python3 train_classification.py
-```
-
-Similarly, to launch training for city index predition use:
+To launch training for city index predition use:
 ```
 python3 train_regression.py
 ```
 
 # Inference
 
-For testing out city classificaiton model performance on unseen patches run:
-```
-python3 test_classification.py
-```
-
-Similarly, to test city index prediciton on unseen patches run:
+To test city index prediciton on unseen patches run:
 ```
 python3 test_regression.py
 ```
