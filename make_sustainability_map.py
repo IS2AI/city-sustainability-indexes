@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 # import all necessary libraries
 
 import os
@@ -23,46 +17,28 @@ from torch import nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from torchvision import models, transforms, datasets
-
-
-# In[2]:
-
+import shutil
 
 # read sustainability index csv
 
 df = pd.read_csv('workspace/dataset/sustainability_index.csv', index_col='city')
 df.dropna(subset=['overall'], inplace=True)
 scores = df['overall'].to_dict()
-scores
-
-
-# In[3]:
-
 
 # additional fully connected layer to ResNet for regression
 
 class net(nn.Module):
     def __init__(self):
-        super(net, self).__init__()
-#         self.fc1 = nn.Linear(512, 38)        
+        super(net, self).__init__()      
         self.fc2 = nn.Linear(38, 1)
     
     def forward(self, x):
-#         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))        
         return x
-
-
-# In[4]:
-
 
 # setting the device
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 print("Using {} device".format(device))
-
-
-# In[5]:
-
 
 normalize = transforms.Compose([
         transforms.ToPILImage(),
@@ -76,10 +52,6 @@ inv_normalize = transforms.Normalize(
     std=[1/0.229, 1/0.224, 1/0.255]
 )
 
-
-# In[6]:
-
-
 def interpolate_scores(A, out_size):
     """
     Function that interpolates input matrix A to a matrix of size out_size
@@ -91,10 +63,6 @@ def interpolate_scores(A, out_size):
     grid_x, grid_y = np.mgrid[0:1:out_size*1j, 0:1:out_size*1j]
     grid_z = inter.griddata(pts, vals, (grid_x, grid_y), method='linear')
     return grid_z
-
-
-# In[7]:
-
 
 def sustainability_map(image_path, true_index, model_path, device, patch_dim=480, save_dir='reg_results_diff'):
     """
@@ -157,10 +125,6 @@ def sustainability_map(image_path, true_index, model_path, device, patch_dim=480
     
     plt.savefig(os.path.join(save_dir, image_name + '_overlay.jpg'))
     #plt.savefig(save_path)
-
-
-# In[17]:
-
 
 def sustainability_map_cnn(image_path, true_index, model_path, device, stride=60, patch_dim=480, save_dir='reg_results_overall'):
     plt.figure(figsize=(12, 12), dpi=300)
@@ -242,9 +206,6 @@ def sustainability_map_cnn(image_path, true_index, model_path, device, stride=60
     plt.savefig(os.path.join(save_dir, image_name + '_overlay.jpg'))
 
 
-# In[ ]:
-
-
 model_path = 'models/resnet50_reg_overall/model_14.pth'
 
 image_paths = list(paths.list_files('workspace/dataset/samples', validExts='jpg'))
@@ -269,20 +230,7 @@ for image_path in image_paths:
     sustainability_map_cnn(image_path, true_index, model_path, device)
     #sustainability_map(image_path, true_index, model_path, device)
 
-# In[ ]:
-
-
-
-
-
-# In[1]:
-
-
-import shutil
 shutil.make_archive('reg_results_overall', 'zip', 'reg_results_overall')
-
-
-# In[ ]:
 
 
 
