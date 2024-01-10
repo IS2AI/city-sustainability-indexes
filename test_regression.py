@@ -121,8 +121,7 @@ print(avgTestLoss)
 # map to 1-100 range
 pred_labels = (np.array(preds) * 100)
 true_labels = np.round(np.array(trues) * 100)
-#print(math.modf(pred_labels)[0])
-#pred_labels = np.where(np.vectorize(math.modf(pred_labels)[0])<0.5, np.floor(pred_labels), np.ceil(pred_labels))
+
 r2 = r2_score(true_labels, pred_labels)
 print('r2 score for the model is', r2)
 df_labels = pd.DataFrame(list(zip(pred_labels, true_labels)),
