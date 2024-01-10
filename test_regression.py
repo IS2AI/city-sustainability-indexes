@@ -21,7 +21,7 @@ from sklearn.metrics import r2_score
 # read sustainability index csv
 
 df = pd.read_csv('city_indexes/sustainability_index.csv', index_col='city')
-df['overall'] /= 100               # overall / planet / people / profit
+df['overall'] /= 100
 scores = df['overall'].to_dict()
 
 class CityDataset(Dataset):
