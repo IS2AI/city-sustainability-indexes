@@ -8,56 +8,6 @@ Alternatively, models only can be accessed at [this google drive link](https://d
 Dataset consists of 45 cities from various locations, and mostly chosen from [Arcadis Index 2022](https://www.arcadis.com/en/knowledge-hub/perspectives/global/sustainable-cities-index). Additional 8 cities (Almaty, Ankara, Ashgabat, Astana, Baku, Bishkek, Shymkent, and Tashkent) underrepresented in Arcadis Index is also part of the dataset.
 
 Cities and their corrresponding index values from 9 different sustainability ranking systems which were used for model training:
-| City IATA Code | Overall Arcadis SCI |
-| -------------- | ------------------- |
-| Content Cell   | Content Cell  |
-| Content Cell   | Content Cell  |
-|      ALA       | 
-|      ESB       |
-|      ASB       |
-|      NQZ       |
-|      GYD       |
-|      BKK       |
-|      PEK       | 
-|      FRU       |
-|      BOG       |
-|      BOS       |
-|      BNE       |
-|      AEP       |
-|      CAI       |
-|      CHI       |
-|      DUB       |
-|      HAN       |
-|      HKG       | 
-|      IST       |
-|      CGK       |
-|      FIH       |
-|      KUL       |
-|      LOS       |
-|      LHE       |
-|      LIS       |
-|      MNL       |
-|      MEL       |
-|      MEX       |
-|      MIL       |
-|      BOM       |
-|      MUC       |
-|      NBO       |
-|      OSL       |
-|      PAR       |
-|      RIX       | 
-|      SFO       |
-|      GRU       |
-|      ICN       |
-|      CIT       |
-|      SIN       |
-|      SYD       |
-|      TPE       |
-|      TAS       |
-|      TKY       |
-|      YVR       |
-|      IAD       |
-
 | City IATA Code | Overall Arcadis SCI | Planet Arcadis SCI | People Arcadis SCI | Profit Arcadis SCI | Sustainable cities by Corporate Knights | Resilient Cities by Grosvenor | Global Cities by AT Kearney | European Green City Index | US and Canada Green City Index |
 |----------------|---------------------|--------------------|--------------------|--------------------|-----------------------------------------|-------------------------------|-----------------------------|---------------------------|--------------------------------|
 | ALA            | -                   | -                  | -                  | -                  | -                                       | -                             | 118                         | -                         | -                              |
