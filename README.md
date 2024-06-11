@@ -5,9 +5,8 @@ This repository contains codes and data for performing city classification predi
 Original dataset contains raw 1585 images of 4800 x 4800 resolution (16 GB). Raw data, processed dataset, and models altogether can be downloaded by filling out [this form](https://forms.gle/vsg8SqTB1V6iqXx3A).
 Alternatively, models only can be accessed at [this google drive link](https://drive.google.com/drive/folders/1-7C7YY3ejCsLZlXKM5o0E8kT5IY2ROyK?usp=sharing).
 
-Dataset consists of 45 cities from various locations, and mostly chosen from [Arcadis Index 2022](https://www.arcadis.com/en/knowledge-hub/perspectives/global/sustainable-cities-index). Additional 8 cities (Almaty, Ankara, Ashgabat, Astana, Baku, Bishkek, Shymkent, and Tashkent) underrepresented in Arcadis Index is also part of the dataset.
+Dataset consists of 45 cities from various locations, and mostly chosen from [Arcadis Index 2022](https://www.arcadis.com/en/knowledge-hub/perspectives/global/sustainable-cities-index). Cities and their corrresponding index values from 9 different sustainability ranking systems which were used for model training:
 
-Cities and their corrresponding index values from 9 different sustainability ranking systems which were used for model training:
 | City IATA Code | Overall Arcadis SCI | Planet Arcadis SCI | People Arcadis SCI | Profit Arcadis SCI | Sustainable cities by Corporate Knights | Resilient Cities by Grosvenor | Global Cities by AT Kearney | European Green City Index | US and Canada Green City Index |
 |----------------|---------------------|--------------------|--------------------|--------------------|-----------------------------------------|-------------------------------|-----------------------------|---------------------------|--------------------------------|
 | ALA            | -                   | -                  | -                  | -                  | -                                       | -                             | 118                         | -                         | -                              |
