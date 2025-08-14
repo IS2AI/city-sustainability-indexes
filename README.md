@@ -58,13 +58,13 @@ Dataset consists of 45 cities from various locations, and mostly chosen from [Ar
 
 
 
-# Downloading the repository
+# 📥 Downloading the repository
 
 ```
 $ git clone https://github.com/IS2AI/city-classification-and-index-prediction
 ```
 
-# Pre-processing 
+# ⚙️ Pre-processing 
 
 Prior to training it is necessary to perform pre-processing on raw images. To generate patches out of raw images needed for training, and to perform train-val-test split launch the following script:
 
@@ -72,24 +72,32 @@ Prior to training it is necessary to perform pre-processing on raw images. To ge
 python3 preprocessing.py
 ```
 
-# Training
+# ⚡ Training
 
 To launch training for city index predition use:
 ```
 python3 train_regression.py
 ```
 
-# Inference
+# 🎯 Inference
 
 To test city index prediciton on unseen patches run:
 ```
 python3 test_regression.py
 ```
 
-# Sustainability map creation
+# 🌱🗺️ Sustainability map creation
 
 To create sustainability color map, there is available another script:
 
 ```
 python3 make_sustainability_map.py
+```
+
+# 🔍🤖 Explainable AI
+
+To run Relevance-CAM and receive Vizual Explanations of decision making method run:
+
+```
+python3 rel_cam.py
 ```
