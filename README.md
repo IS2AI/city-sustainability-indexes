@@ -96,8 +96,11 @@ python3 make_sustainability_map.py
 
 # 🔍🤖 Explainable AI
 
-To run Relevance-CAM and receive Vizual Explanations of decision making process, run:
+To run Relevance-CAM and receive Vizual Explanations of decision making process of models, run:
 
 ```
 python3 rel_cam.py
 ```
+
+Full list of Vizual Explanations produced using Relevance-CAM can be found [here](https://drive.google.com/drive/folders/1E-PdSc0JoByzvo4230AOaYD6hte7SWUY?usp=share_link)
+
