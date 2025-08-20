@@ -4,7 +4,7 @@ This repository contains codes and data for performing city classification predi
 
 Original dataset contains raw 1585 images of 4800 x 4800 resolution (16 GB). 
 - Raw data and processed dataset can be downloaded at our [Hugging Face page](https://huggingface.co/datasets/issai/SCI_prediction).
-- Models (both pre-trained, and fine-tuned) only can be accessed at [this google drive link](https://drive.google.com/drive/folders/1-7C7YY3ejCsLZlXKM5o0E8kT5IY2ROyK?usp=sharing).
+- Models (both pre-trained, and fine-tuned) can be accessed at [this google drive link](https://drive.google.com/drive/folders/1-7C7YY3ejCsLZlXKM5o0E8kT5IY2ROyK?usp=sharing).
 
 Dataset consists of 45 cities from various locations, and mostly chosen from [Arcadis Index 2022](https://www.arcadis.com/en/knowledge-hub/perspectives/global/sustainable-cities-index). Cities and their corrresponding index values from 9 different sustainability ranking systems which were used for model training:
 
