@@ -62,7 +62,8 @@ Dataset consists of 45 cities from various locations, and mostly chosen from [Ar
 # 📥 Downloading the repository
 
 ```
-$ git clone https://github.com/IS2AI/city-classification-and-index-prediction
+git clone https://github.com/IS2AI/city-classification-and-index-prediction
+
 ```
 
 # ⚙️ Pre-processing 
