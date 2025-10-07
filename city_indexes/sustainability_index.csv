@@ -1,4 +1,7 @@
 city,overall,planet,people,profit,Continent,Sustainable cities by Corporate Knights,Resilient Cities by Grosvenor,Global Cities by AT Kearney ,European Green City index,US and Canada Green City index
+ALA,,,,,Asia,,,118,,
+ESB,,,,,Asia,,,86,,
+NQZ,,,,,Asia,,,128,,
 BKK,72,92,58,73,Asia,,,35,,
 PEK,73,91,71,53,Asia,30,39,6,,
 BOG,78,20,82,82,South America,36,,63,,
@@ -36,3 +39,4 @@ BNE,64,60,57,50,Oceania,,27,,,
 TKY,2,7,7,20,Asia,,26,4,,
 MIL,51,21,39,71,Europe,,33,44,,
 CHI,52,67,70,8,North America,,,8,,11
+
