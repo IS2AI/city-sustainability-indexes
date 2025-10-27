@@ -68,14 +68,14 @@ test_set = CityDataset(test_paths, scores, transform=t)
 test_loader = DataLoader(test_set, batch_size=256, num_workers=4, shuffle=False)
 
 # additional fully connected layer to ResNet for regression
-class net(nn.Module):
-    def __init__(self):
-        super(net, self).__init__()      
-        self.fc2 = nn.Linear(38, 1)
+#class net(nn.Module):
+    #def __init__(self):
+        #super(net, self).__init__()      
+        #self.fc2 = nn.Linear(38, 1)
     
-    def forward(self, x):
-        x = F.relu(self.fc2(x))        
-        return x
+    #def forward(self, x):
+        #x = F.relu(self.fc2(x))        
+        #return x
 
 # setting the device
 device = "cuda:3" if torch.cuda.is_available() else "cpu"
