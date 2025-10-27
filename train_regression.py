@@ -100,15 +100,15 @@ valSteps = len(val_loader.dataset) // BATCH_SIZE
 print(trainSteps, valSteps)
 
 
-class net(nn.Module):
-    def __init__(self):
-        super(net, self).__init__()      
-        self.fc2 = nn.Linear(38, 1)
+#class net(nn.Module):
+    #def __init__(self):
+        #super(net, self).__init__()      
+        #self.fc2 = nn.Linear(38, 1)
     
-    def forward(self, x):
-        x = self.fc2(x)
+    #def forward(self, x):
+        #x = self.fc2(x)
         
-        return x
+        #return x
 
 # initialize the ResNet model
 print("[INFO] initializing the ResNet model...")
