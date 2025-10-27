@@ -25,16 +25,14 @@ df = pd.read_csv('workspace/dataset/sustainability_index.csv', index_col='city')
 df.dropna(subset=['overall'], inplace=True)
 scores = df['overall'].to_dict()
 
-# additional fully connected layer to ResNet for regression
-
-class net(nn.Module):
-    def __init__(self):
-        super(net, self).__init__()      
-        self.fc2 = nn.Linear(38, 1)
+#class net(nn.Module):
+    #def __init__(self):
+        #super(net, self).__init__()      
+        #self.fc2 = nn.Linear(38, 1)
     
-    def forward(self, x):
-        x = F.relu(self.fc2(x))        
-        return x
+    #def forward(self, x):
+        #x = F.relu(self.fc2(x))        
+        #return x
 
 # setting the device
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
