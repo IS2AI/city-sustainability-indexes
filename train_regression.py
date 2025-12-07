@@ -40,8 +40,6 @@ print(scores)
 
 
 class CityDataset(Dataset):
-    """Face Landmarks dataset."""
-
     def __init__(self, image_dir, scores, transform=None):
         """
         Args:
