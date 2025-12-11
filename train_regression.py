@@ -43,8 +43,7 @@ class CityDataset(Dataset):
     def __init__(self, image_dir, scores, transform=None):
         """
         Args:
-            csv_file (string): Path to the csv file with scores.
-            root_dir (string): Directory with all the images.
+            image_dir (string): Directory with all the images.
             transform (callable, optional): Optional transform to be applied
                 on a sample.
         """
