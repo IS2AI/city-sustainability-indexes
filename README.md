@@ -2,7 +2,7 @@
 
 This repository contains codes and data for performing city classification prediction tasks.
 
-Original dataset contains raw 1585 images of 4800 x 4800 resolution (16 GB). 
+Original dataset contains raw 1302 images of 4800 x 4800 resolution (14 GB). 
 - Raw data and processed dataset can be downloaded at our [Hugging Face dataset link](https://huggingface.co/datasets/issai/SCI_prediction).
 - Models (both pre-trained, and fine-tuned) can be accessed at [Hugging Face models link](https://huggingface.co/issai/SCI_prediction_models).
 
