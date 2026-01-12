@@ -1,6 +1,6 @@
 # AI for City Districts: Measuring City Districts’ Sustainability using Satellite Data
 
-This repository contains codes and data for performing city classification prediction tasks.
+This repository contains codes and data for performing city index prediction (regression) task.
 
 Original dataset contains raw 1302 images of 4800 x 4800 resolution (14 GB). 
 - Raw data and processed dataset can be downloaded at our [Hugging Face dataset link](https://huggingface.co/datasets/issai/SCI_prediction).
